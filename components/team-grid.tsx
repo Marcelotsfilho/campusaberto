@@ -72,13 +72,13 @@ export function TeamGrid() {
               <div className="relative">
                 <img src={member.image || "/placeholder.svg"} alt={member.name} className="w-full h-64 object-cover" />
                 <div className="absolute top-4 right-4">
-                  <Badge className="bg-green-600">{member.specialization}</Badge>
+                  <Badge className="bg-orange-500">{member.specialization}</Badge>
                 </div>
               </div>
 
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{member.name}</h3>
-                <p className="text-green-600 dark:text-green-400 font-medium mb-3">{member.role}</p>
+                <p className="text-orange-500 dark:text-orange-400 font-medium mb-3">{member.role}</p>
 
                 {expandedMember === index ? (
                   <div className="space-y-4">

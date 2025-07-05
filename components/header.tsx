@@ -19,7 +19,7 @@ export function Header() {
   ]
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 z-50">
+    <header className="fixed top-0 w-full bg-white/60 dark:bg-gray-900/60 backdrop-blur-xl border-b border-gray-200 dark:border-gray-800 z-50 shadow-lg dark:shadow-none">
       <div className="container mx-auto px-2">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">

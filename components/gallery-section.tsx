@@ -6,32 +6,32 @@ import { Button } from "@/components/ui/button"
 
 const galleryImages = [
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/carunners.jpg",
     alt: "Aula de natação na piscina olímpica",
     title: "Natação",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/carunners.jpg",
     alt: "Treino de atletismo na pista",
     title: "Corrida",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/futevolei.jpg",
     alt: "Aula de futebol no campo do CEFET",
     title: "Futebol",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/futevolei.jpg",
     alt: "Treino de vôlei na quadra coberta",
     title: "Vôlei",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/basquetemvp.jpg",
     alt: "Treino de basquete",
     title: "Basquete",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/tenisdemesa.jpg",
     alt: "Competição de tênis de mesa",
     title: "Tênis de Mesa",
   },
