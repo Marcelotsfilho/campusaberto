@@ -8,10 +8,11 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">CA</span>
-              </div>
-              <span className="font-bold text-xl">Campus Aberto</span>
+              <img
+                src="/logoC.A-branca.png"
+                alt="Campus Aberto Logo"
+                className="h-20 w-auto"
+              />
             </div>
             <p className="text-gray-400 mb-4">Esporte gratuito e de qualidade para toda a comunidade do CEFET-MG.</p>
             <div className="flex space-x-4">
@@ -75,11 +76,11 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-gray-400">
                 <MapPin className="h-4 w-4" />
-                <span className="text-sm">CEFET-MG, Belo Horizonte</span>
+                <span className="text-sm">CEFET-MG, Leopoldina</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-400">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">(31) 3319-7000</span>
+                <span className="text-sm">(32) 0000-0000</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-400">
                 <Mail className="h-4 w-4" />
@@ -90,7 +91,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Campus Aberto - CEFET-MG. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Campus Aberto - CEFET-MG. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

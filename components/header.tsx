@@ -20,13 +20,14 @@ export function Header() {
 
   return (
     <header className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 z-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">CA</span>
-            </div>
-            <span className="font-bold text-xl text-gray-900 dark:text-white">Campus Aberto</span>
+            <img
+              src={theme === "dark" ? "/logoC.A-branca.png" : "/logoC.A-azul.png"}
+              alt="Campus Aberto Logo"
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

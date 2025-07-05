@@ -13,13 +13,22 @@ export function ContactInfo() {
         </CardHeader>
         <CardContent className="space-y-4">
           <div>
-            <h4 className="font-semibold">CEFET-MG Campus I</h4>
-            <p className="text-gray-600">Av. Amazonas, 7675 - Nova Gameleira</p>
-            <p className="text-gray-600">Belo Horizonte - MG, 30510-000</p>
+            <h4 className="font-semibold">CEFET-MG Campus Leopoldina</h4>
+            <p className="text-gray-600">Rua José Peres, 558 - Centro</p>
+            <p className="text-gray-600">Leopoldina - MG, 36700-000</p>
           </div>
 
-          <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-            <p className="text-gray-500">Mapa do Campus</p>
+          <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
+            <iframe
+              src="https://www.google.com/maps?q=CEFET-MG+Leopoldina,+Rua+Jos%C3%A9+Peres,+558+-+Centro,+Leopoldina+-+MG,+36700-000&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Mapa do Campus CEFET-MG Leopoldina"
+            ></iframe>
           </div>
         </CardContent>
       </Card>
@@ -31,7 +40,7 @@ export function ContactInfo() {
         <CardContent className="space-y-4">
           <div className="flex items-center space-x-3">
             <Phone className="h-5 w-5 text-blue-600" />
-            <span>(31) 3319-7000</span>
+            <span>(32) 0000-0000</span>
           </div>
           <div className="flex items-center space-x-3">
             <Mail className="h-5 w-5 text-blue-600" />

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Campus Aberto - CEFET-MG",
   description:
     "Esporte gratuito e de qualidade para toda a comunidade. Participe das atividades esportivas do Campus Aberto CEFET-MG.",
-    generator: 'v0.dev'
+    creator: 'Marcelo Teixeira de Sousa Filho e Isabelly Araujo Temóteo'
 }
 
 export default function RootLayout({
