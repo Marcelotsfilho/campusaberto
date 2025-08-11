@@ -7,33 +7,33 @@ import { Button } from "@/components/ui/button"
 const galleryImages = [
   {
     src: "/carunners.jpg",
-    alt: "Aula de natação na piscina olímpica",
-    title: "Natação",
+    alt: "Prática de corrida da equipe Campus Aberto Runners",
+    title: "Equipe Campus Aberto Runners",
   },
   {
-    src: "/carunners.jpg",
-    alt: "Treino de atletismo na pista",
-    title: "Corrida",
+    src: "/palestra-runners.jpg",
+    alt: "Palestra inaugural projeto Campus Aberto Runners",
+    title: "Palestra inaugural projeto Campus Aberto Runners",
+  },
+  {
+    src: "/equipecampusaberto.jpg",
+    alt: "Equipe Campus Aberto",
+    title: "Participação na MOCITEC 2023",
   },
   {
     src: "/futevolei.jpg",
-    alt: "Aula de futebol no campo do CEFET",
-    title: "Futebol",
+    alt: "Oficina Futevôlei",
+    title: "Oficina de futevôlei na MOCITEC 2023",
   },
   {
-    src: "/futevolei.jpg",
-    alt: "Treino de vôlei na quadra coberta",
-    title: "Vôlei",
+    src: "/lei-insentivo.jpg",
+    alt: "Curso Lei de Insentivo ao Esporte",
+    title: "Curso Lei de Insentivo ao Esporte",
   },
   {
-    src: "/basquetemvp.jpg",
-    alt: "Treino de basquete",
-    title: "Basquete",
-  },
-  {
-    src: "/tenisdemesa.jpg",
-    alt: "Competição de tênis de mesa",
-    title: "Tênis de Mesa",
+    src: "/equipecarunners.jpg",
+    alt: "Aula inaugural Runners",
+    title: "Aula inaugural Campus Aberto Runners",
   },
 ]
 
@@ -57,7 +57,7 @@ export function GallerySection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Nossas Atividades em Ação
+            Nossos Projetos em Ação
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Veja como é participar das atividades do Campus Aberto

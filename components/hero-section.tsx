@@ -21,7 +21,7 @@ export function HeroSection() {
           alt="Campus CEFET-MG"
           className="w-full h-full object-cover brightness-75 filter blur-sm"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-800/30 to-orange-500/30" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}
@@ -31,7 +31,7 @@ export function HeroSection() {
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Esporte gratuito e de
-            <span className="text-[#0061df]"> qualidade</span>
+            <span className="text-[#2483ff]"> qualidade</span>
             <br />
             para todos
           </h1>
@@ -45,7 +45,7 @@ export function HeroSection() {
               size="lg"
               className="bg-[#004299] hover:bg-[#022b6dff] text-white font-semibold px-8 py-4 text-lg"
             >
-              <Link href="/cadastro">Conheça nossos projetos</Link>
+              <Link href="/atividades">Conheça nossos projetos</Link>
             </Button>
             <Button
               variant="outline"

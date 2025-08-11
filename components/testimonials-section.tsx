@@ -10,7 +10,6 @@ const testimonials = [
     activity: "Vôlei",
     text: "O Campus Aberto mudou minha vida! Além de melhorar minha saúde, fiz amizades incríveis. A qualidade dos professores é excepcional.",
     rating: 5,
-    // Não tem logo
   },
   {
     name: "João Santos",
@@ -18,17 +17,22 @@ const testimonials = [
     activity: "Futebol",
     text: "Sempre quis jogar futebol mas nunca tive oportunidade. Aqui encontrei um ambiente acolhedor e profissionais dedicados.",
     rating: 5,
-    // Não tem logo
   },
   {
-    name: "Ana Costa",
-    age: 45,
-    activity: "Natação",
-    text: "Depois dos 40, pensei que era tarde para começar a nadar. O projeto me provou o contrário. Hoje me sinto mais jovem!",
+    name: "Sol e Neve",
+    // 'age' foi removido, pois é um patrocinador
+    activity: "Patrocinador Master",
+    text: "Acreditamos no poder do esporte para transformar comunidades. Apoiar o Campus Aberto é investir no futuro e no bem-estar de todos.",
     rating: 5,
-    // Exemplo de patrocinador com logo
-    logo: "/sol-neve.png", // Caminho da logo
+    logo: "/soleneve-logo.webp", // Logo do patrocinador
   },
+  {
+    name: "Ana Pereira",
+    // Exemplo de bolsista sem idade obrigatória
+    activity: "Bolsista de Educação Física",
+    text: "Fazer parte deste projeto como bolsista é uma experiência de aprendizado imensa. A troca com a comunidade é gratificante e enriquece minha formação.",
+    rating: 5,
+  }
 ]
 
 const stats = [
@@ -48,6 +52,8 @@ export function TestimonialsSection() {
 
     return () => clearInterval(interval)
   }, [])
+
+  const testimonial = testimonials[currentTestimonial]
 
   return (
     <section className="py-20 bg-white dark:bg-gray-900">
@@ -73,29 +79,32 @@ export function TestimonialsSection() {
 
             <div className="relative z-10">
               <p className="text-xl md:text-2xl leading-relaxed mb-8 italic">
-                "{testimonials[currentTestimonial].text}"
+                "{testimonial.text}"
               </p>
 
               <div className="flex items-center justify-between">
                 <div>
                   <div className="font-semibold text-lg">
-                    {testimonials[currentTestimonial].name}, {testimonials[currentTestimonial].age} anos
+                    {testimonial.name}
+                    {/* Renderiza a idade apenas se ela existir */}
+                    {testimonial.age && `, ${testimonial.age} anos`}
                   </div>
                   <div className="text-blue-200">
-                    Praticante de {testimonials[currentTestimonial].activity}
+                    {/* Lógica para exibir o texto da atividade (praticante ou bolsista) */}
+                    {testimonial.age ? `Praticante de ${testimonial.activity}` : testimonial.activity}
                   </div>
-                  {/* Exibe a logo se existir */}
-                  {testimonials[currentTestimonial].logo && (
+                  {/* Renderiza a logo apenas se ela existir */}
+                  {testimonial.logo && (
                     <img
-                      src={testimonials[currentTestimonial].logo}
-                      alt="Logo do patrocinador"
-                      className="h-20 mt-2 bg-red-500"
+                      src={testimonial.logo}
+                      alt={`Logo de ${testimonial.name}`}
+                      className="h-16 mt-4" // Ajustei a altura e margem para melhor visualização
                     />
                   )}
                 </div>
 
                 <div className="flex space-x-1">
-                  {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
+                  {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
