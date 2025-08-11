@@ -10,6 +10,7 @@ const testimonials = [
     activity: "Vôlei",
     text: "O Campus Aberto mudou minha vida! Além de melhorar minha saúde, fiz amizades incríveis. A qualidade dos professores é excepcional.",
     rating: 5,
+    // Não tem logo
   },
   {
     name: "João Santos",
@@ -17,6 +18,7 @@ const testimonials = [
     activity: "Futebol",
     text: "Sempre quis jogar futebol mas nunca tive oportunidade. Aqui encontrei um ambiente acolhedor e profissionais dedicados.",
     rating: 5,
+    // Não tem logo
   },
   {
     name: "Ana Costa",
@@ -24,14 +26,16 @@ const testimonials = [
     activity: "Natação",
     text: "Depois dos 40, pensei que era tarde para começar a nadar. O projeto me provou o contrário. Hoje me sinto mais jovem!",
     rating: 5,
+    // Exemplo de patrocinador com logo
+    logo: "/sol-neve.png", // Caminho da logo
   },
 ]
 
 const stats = [
-  { number: "500+", label: "Pessoas atendidas" },
-  { number: "5", label: "Modalidades esportivas" },
+  { number: "500+", label: "Familias atendidas" },
+  { number: "10", label: "Projetos" },
   { number: "3", label: "Anos de projeto" },
-  { number: "95%", label: "Satisfação dos participantes" },
+  { number: "30+", label: "Apoiadores" },
 ]
 
 export function TestimonialsSection() {
@@ -61,7 +65,7 @@ export function TestimonialsSection() {
         {/* Testimonials */}
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-16">
-            O que dizem nossos participantes
+            Relatos que inspiram
           </h2>
 
           <div className="relative bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 md:p-12 text-white">
@@ -77,7 +81,17 @@ export function TestimonialsSection() {
                   <div className="font-semibold text-lg">
                     {testimonials[currentTestimonial].name}, {testimonials[currentTestimonial].age} anos
                   </div>
-                  <div className="text-blue-200">Praticante de {testimonials[currentTestimonial].activity}</div>
+                  <div className="text-blue-200">
+                    Praticante de {testimonials[currentTestimonial].activity}
+                  </div>
+                  {/* Exibe a logo se existir */}
+                  {testimonials[currentTestimonial].logo && (
+                    <img
+                      src={testimonials[currentTestimonial].logo}
+                      alt="Logo do patrocinador"
+                      className="h-20 mt-2 bg-red-500"
+                    />
+                  )}
                 </div>
 
                 <div className="flex space-x-1">
