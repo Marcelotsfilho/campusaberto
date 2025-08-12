@@ -35,7 +35,7 @@ export function MissionSection() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Nossos Princípios</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              O Campus Aberto foi criado em 2016 com o objetivo de democratizar o acesso ao esporte e promover a
+              O Campus Aberto foi criado em 2022 com o objetivo de democratizar o acesso ao esporte e promover a
               integração entre a universidade e a comunidade externa.
             </p>
           </div>

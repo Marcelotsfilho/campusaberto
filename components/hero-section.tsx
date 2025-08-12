@@ -17,7 +17,7 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black">
         <img
-          src="/predio-cefet.png"
+          src="/banner.jpg"
           alt="Campus CEFET-MG"
           className="w-full h-full object-cover brightness-75 filter blur-sm"
         />

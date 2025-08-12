@@ -4,7 +4,7 @@ import { Facebook, Instagram, Youtube, Mail, Phone, MapPin, MessageCircle } from
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
@@ -14,12 +14,12 @@ export function Footer() {
                 className="h-20 w-auto"
               />
             </div>
-            <p className="text-gray-400 mb-4">Esporte gratuito e de qualidade para toda a comunidade do CEFET-MG.</p>
+            <p className="text-gray-400 mb-4">Esporte gratuito e de qualidade para toda a comunidade.</p>
             <div className="flex space-x-4">
               {/* <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Facebook className="h-5 w-5" />
               </a> */}
-              <a href="https://wa.me/5532999999999" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
+              <a href="https://wa.me/5532988157183" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a href="https://www.instagram.com/campusabertocefetleopoldina/" className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -65,12 +65,14 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Atividades</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Futebol</li>
-              <li>Vôlei</li>
-              <li>Basquete</li>
-              <li>Tênis de Mesa</li>
-              <li>Natação</li>
-              <li>Atletismo</li>
+              <li>Oficinas de natação</li>
+              <li>Grupo de corrida</li>
+              <li>Curso - Lei de Insentivo ao Esporte</li>
+              <li>Curso - Arte, Cultura e Tecnologia</li>
+              <li>Oficinas de Educação Física no ENEM</li>
+              <li>Altética Panterão</li>
+              <li>Campeonato Arthur Ribeiro</li>
+              <li>IPAQmove</li>
             </ul>
           </div>
 
@@ -83,11 +85,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-gray-400">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">(32) 0000-0000</span>
+                <span className="text-sm">(32) 98815-7183</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-400">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">campusaberto@cefetmg.br</span>
+                <span className="text-sm">campusabertocefetleopoldina@gmail.com</span>
               </div>
             </div>
           </div>

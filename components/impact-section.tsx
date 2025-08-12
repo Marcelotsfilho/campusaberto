@@ -18,13 +18,13 @@ export function ImpactSection() {
             <Card>
               <CardContent className="p-6 text-center">
                 <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">500+</div>
-                <div className="text-gray-600 dark:text-gray-300">Pessoas Beneficiadas</div>
+                <div className="text-gray-600 dark:text-gray-300">Famílias Beneficiadas</div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">5</div>
-                <div className="text-gray-600 dark:text-gray-300">Modalidades Oferecidas</div>
+                <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">8</div>
+                <div className="text-gray-600 dark:text-gray-300">Cursos, Oficinas e Projetos</div>
               </CardContent>
             </Card>
             <Card>
@@ -39,12 +39,12 @@ export function ImpactSection() {
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">História do Projeto</h3>
             <div className="prose prose-lg max-w-none text-gray-600 dark:text-gray-300">
               <p className="mb-4">
-                O Campus Aberto nasceu em 2016 da necessidade de aproximar o CEFET-MG da comunidade externa, oferecendo
+                O Campus Aberto nasceu em 2022 da necessidade de aproximar o CEFET-MG da comunidade externa, oferecendo
                 acesso gratuito às instalações esportivas da instituição. O projeto surgiu como uma iniciativa de
                 extensão universitária, reconhecendo o papel social da universidade pública.
               </p>
               <p className="mb-4">
-                Inicialmente, o projeto atendia cerca de 50 pessoas em apenas 3 modalidades. Hoje, graças ao apoio da
+                Inicialmente, o projeto atendia cerca de 50 famílias em apenas 3 modalidades. Hoje, graças ao apoio da
                 comunidade acadêmica e ao reconhecimento da sociedade, o Campus Aberto se tornou um dos maiores projetos
                 de extensão do CEFET-MG.
               </p>
