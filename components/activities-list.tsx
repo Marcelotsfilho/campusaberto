@@ -6,77 +6,137 @@ import { Badge } from "@/components/ui/badge"
 import { Clock, Users, MapPin, Search, Filter, Calendar } from "lucide-react"
 
 const activities = [
+	// CURSOS
+	{
+		name: "Lei de Incentivo ao Esporte",
+		description: "Curso",
+		// schedule: "Segunda a Sexta - 7h às 9h / 18h às 20h",
+		// location: "Piscina Olímpica",
+		// participants: "15 alunos por turma",
+		// ageGroup: "6+ anos",
+		// level: "Iniciante a Competitivo",
+		image: "/lei-insentivo.jpg",
+	},
+	{
+		name: "Arte, Cultura e Tecnologia",
+		description: "Curso",
+		// schedule: "Segunda e Quinta - 18h às 20h",
+		// location: "CEFEL",
+		// participants: "atletas ilimitados por treino",
+		// ageGroup: "14+ anos",
+		// level: "Iniciante a Competitivo",
+		image: "",
+	},
+
+	//OFICINAS
 	{
 		name: "Natação",
-		description: "Aulas de natação em piscina olímpica aquecida.",
-		schedule: "Segunda a Sexta - 7h às 9h / 18h às 20h",
-		location: "Piscina Olímpica",
-		participants: "15 alunos por turma",
-		ageGroup: "6+ anos",
-		level: "Iniciante a Competitivo",
-		image: "/carunners.jpg",
+		description: "Oficina esportiva de natação",
+		// schedule: "Terça e Quinta - 18h às 20h",
+		// location: "Campo de Futebol",
+		// participants: "22 jogadores por treino",
+		// ageGroup: "16+ anos",
+		// level: "Todos os níveis",
+		image: "/",
+	},
+	{
+		name: "Esportes Coletivos",
+		description: "Modalidades indoor que visam o desenvolvimento de habilidades coletivas",
+		// schedule: "Segunda e Quarta - 19h às 21h",
+		// location: "Quadra Poliesportiva",
+		// participants: "12 jogadores por treino",
+		// ageGroup: "14+ anos",
+		// level: "Iniciante a Avançado",
+		image: "",
+	},
+	{
+		name: "Educação Física no ENEM",
+		description: "Oficina",
+		// schedule: "Terça e Quinta - 17h às 19h",
+		// location: "Quadra de Basquete",
+		// participants: "10 jogadores por treino",
+		// ageGroup: "12+ anos",
+		// level: "Todos os níveis",
+		image: "/ed-fisica-enem.webp",
 	},
 	{
 		name: "Campus Aberto Runners",
-		description: "Corrida, caminhada e atividades de resistência.",
-		schedule: "Segunda e Quinta - 18h às 20h",
-		location: "CEFEL",
-		participants: "atletas ilimitados por treino",
-		ageGroup: "14+ anos",
-		level: "Iniciante a Competitivo",
-		image: "/carunners.jpg",
+		description: "Oficina dedicada a corrida de rua",
+		// schedule: "Segunda a Sexta - 16h às 18h",
+		// location: "Sala de Tênis de Mesa",
+		// participants: "8 jogadores por treino",
+		// ageGroup: "8+ anos",
+		// level: "Todos os níveis",
+		image: "/equipecarunners.jpg",
+	},
+
+	//PESQUISA
+	{
+		name: "IPAQmove",
+		description: "",
+		// schedule: "Segunda a Sexta - 16h às 18h",
+		// location: "Sala de Tênis de Mesa",
+		// participants: "8 jogadores por treino",
+		// ageGroup: "8+ anos",
+		// level: "Todos os níveis",
+		image: "/ipaq-move.jpg",
+	},
+
+	//EVENTOS
+	{
+		name: "MOCITEC MG 2023",
+		description: "Participação na MOCITEC MG 2023",
+		// schedule: "Segunda a Sexta - 16h às 18h",
+		// location: "Sala de Tênis de Mesa",
+		// participants: "8 jogadores por treino",
+		// ageGroup: "8+ anos",
+		// level: "Todos os níveis",
+		image: "/equipecampusaberto.jpg",
 	},
 	{
-		name: "Futebol",
-		description:
-			"Treinos e jogos recreativos em campo oficial com grama sintética.",
-		schedule: "Terça e Quinta - 18h às 20h",
-		location: "Campo de Futebol",
-		participants: "22 jogadores por treino",
-		ageGroup: "16+ anos",
-		level: "Todos os níveis",
-		image: "/futevolei.jpg",
+		name: "Campeonato Arthur Ribeiro",
+		description: "Organização do Campeonato Arthur Ribeiro",
+		// schedule: "Segunda a Sexta - 16h às 18h",
+		// location: "Sala de Tênis de Mesa",
+		// participants: "8 jogadores por treino",
+		// ageGroup: "8+ anos",
+		// level: "Todos os níveis",
+		image: "/camp-arthur-ribeiro-fem.jpg",
 	},
 	{
-		name: "Vôlei",
-		description:
-			"Modalidade indoor e de praia com foco no desenvolvimento técnico.",
-		schedule: "Segunda e Quarta - 19h às 21h",
-		location: "Quadra Poliesportiva",
-		participants: "12 jogadores por treino",
-		ageGroup: "14+ anos",
-		level: "Iniciante a Avançado",
-		image: "/futevolei.jpg",
+		name: "Palestra Campus Aberto Runners",
+		description: "Palestra de abertura do Campus Aberto Runners",
+		// schedule: "Segunda a Sexta - 16h às 18h",
+		// location: "Sala de Tênis de Mesa",
+		// participants: "8 jogadores por treino",
+		// ageGroup: "8+ anos",
+		// level: "Todos os níveis",
+		image: "/palestra-runners.jpg",
 	},
+	
+	//AÇÕES SOCIAIS
 	{
-		name: "Basquete",
-		description: "Treinos focados em fundamentos e jogos coletivos.",
-		schedule: "Terça e Quinta - 17h às 19h",
-		location: "Quadra de Basquete",
-		participants: "10 jogadores por treino",
-		ageGroup: "12+ anos",
-		level: "Todos os níveis",
-		image: "/basquete.jpg",
-	},
-	{
-		name: "Tênis de Mesa",
-		description: "Treinos técnicos e torneios internos regulares.",
-		schedule: "Segunda a Sexta - 16h às 18h",
-		location: "Sala de Tênis de Mesa",
-		participants: "8 jogadores por treino",
-		ageGroup: "8+ anos",
-		level: "Todos os níveis",
-		image: "/tenisdemesa.jpg",
+		name: "APAE",
+		description: "Ação social na APAE de Leopoldina MG",
+		// schedule: "Segunda a Sexta - 16h às 18h",
+		// location: "Sala de Tênis de Mesa",
+		// participants: "8 jogadores por treino",
+		// ageGroup: "8+ anos",
+		// level: "Todos os níveis",
+		image: "/",
 	},
 ]
 
-const filters = ["Todos", "Coletivos", "Individuais", "Aquáticos", "Quadra"]
+const filters = ["Todos", "Cursos", "Oficinas", "Pesquisa", "Eventos", "Atlética Panterão"]
 
 const modalidades = [
-	{ value: "todas", label: "Todas as modalidades" },
-	{ value: "coletivos", label: "Esportes Coletivos" },
-	{ value: "individuais", label: "Esportes Individuais" },
-	{ value: "aquaticos", label: "Esportes Aquáticos" },
+	{ value: "todas", label: "Todos" },
+	{ value: "cursos", label: "Cursos" },
+	{ value: "oficinas", label: "Oficinas" },
+	{ value: "pesquisa", label: "Pesquisa" },
+	{ value: "eventos", label: "Eventos" },
+	{ value: "atletica", label: "Atlética Panterão" },
+	{ value: "acoes", label: "Ações Sociais" },
 ]
 
 const periodos = [
@@ -101,13 +161,23 @@ export function ActivitiesList() {
 		const matchesModalidade =
 			selectedModalidade === "todas"
 				? true
-				: selectedModalidade === "aquaticos" && activity.name === "Natação"
+				: selectedModalidade === "cursos" && 
+					["Lei de Incentivo ao Esporte", "Arte, Cultura e Tecnologia"].includes(activity.name)
 				? true
-				: selectedModalidade === "coletivos" &&
-				  ["Futebol", "Vôlei", "Basquete"].includes(activity.name)
+				: selectedModalidade === "oficinas" &&
+				  	["Natação", "Esportes Coletivos", "Educação Física no ENEM", "Campus Aberto Runners"].includes(activity.name)
 				? true
-				: selectedModalidade === "individuais" &&
-				  ["Tênis de Mesa"].includes(activity.name)
+				: selectedModalidade === "pesquisa" &&
+				  	["IPAQmove"].includes(activity.name)
+				? true
+				: selectedModalidade === "eventos" &&
+				  	["MOCITEC MG 2023", "Campeonato Arthur Ribeiro", "Palestra Campus Aberto Runners"].includes(activity.name)
+				? true
+				: selectedModalidade === "atletica" &&
+				  	["MOCITEC MG 2023", "Campeonato Arthur Ribeiro"].includes(activity.name)
+				? true
+				: selectedModalidade === "acoes" &&
+				  	["APAE"].includes(activity.name)
 				? true
 				: false
 
@@ -180,18 +250,24 @@ export function ActivitiesList() {
 								</p>
 
 								<div className="space-y-2 text-sm text-gray-500 dark:text-gray-400">
-									<div className="flex items-center space-x-2">
-										<Clock className="h-4 w-4" />
-										<span>{activity.schedule}</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<MapPin className="h-4 w-4" />
-										<span>{activity.location}</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<Users className="h-4 w-4" />
-										<span>{activity.participants}</span>
-									</div>
+									{activity.schedule && (
+										<div className="flex items-center space-x-2">
+											<Clock className="h-4 w-4" />
+											<span>{activity.schedule}</span>
+										</div>
+									)}
+									{activity.location && (
+										<div className="flex items-center space-x-2">
+											<MapPin className="h-4 w-4" />
+											<span>{activity.location}</span>
+										</div>
+									)}
+									{activity.participants && (
+										<div className="flex items-center space-x-2">
+											<Users className="h-4 w-4" />
+											<span>{activity.participants}</span>
+										</div>
+									)}
 								</div>
 
 								{expandedCard === index && (

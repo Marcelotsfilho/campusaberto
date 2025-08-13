@@ -4,9 +4,10 @@ export function TeamHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/profrunners.jpg"
+          src="/equipe-atletica.jpg"
           alt="Equipe Campus Aberto"
           className="w-full h-full object-cover brightness-75 blur-none"
+          style={{objectPosition:'center 13%'}}
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>
@@ -14,7 +15,7 @@ export function TeamHero() {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">Nossa Equipe</h1>
         <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-          Conheça os profissionais dedicados que tornam o Campus Aberto uma realidade
+          Conheça os nossos apoiadores e a equipe que faz o Campus Aberto acontecer!
         </p>
       </div>
     </section>

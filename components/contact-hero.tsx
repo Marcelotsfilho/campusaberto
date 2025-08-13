@@ -1,10 +1,20 @@
 export function ContactHero() {
   return (
-    <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-20">
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">Entre em Contato</h1>
+    <section className="relative min-h-[400px] md:min-h-[500px] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/complexo-esportivo.jpg"
+          alt="Atividades Campus Aberto"
+          className="w-full h-full object-cover brightness-75 blur-none"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">Entre em Contato Conosco</h1>
         <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-          Tem dúvidas sobre o Campus Aberto? Quer saber mais sobre nossas atividades? Estamos aqui para ajudar!
+          Quer saber mais sobre nossas atividades ou como ser um apoiador? Envie sua mensagem!
         </p>
       </div>
     </section>

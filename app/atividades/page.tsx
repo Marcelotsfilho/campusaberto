@@ -7,7 +7,7 @@ export default function ActivitiesPage() {
     <main className="min-h-screen">
       <ActivitiesHero />
       <ActivitiesList />
-      <ScheduleSection />
+      {/* <ScheduleSection /> */}
     </main>
   )
 }

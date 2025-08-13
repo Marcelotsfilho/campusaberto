@@ -40,15 +40,15 @@ export function ContactInfo() {
         <CardContent className="space-y-4">
           <div className="flex items-center space-x-3">
             <Phone className="h-5 w-5 text-blue-600" />
-            <span>(32) 0000-0000</span>
+            <span>(32) 98815-7183</span>
           </div>
           <div className="flex items-center space-x-3">
             <Mail className="h-5 w-5 text-blue-600" />
-            <span>campusaberto@cefetmg.br</span>
+            <span>campusabertocefetleopoldina@gmail.com</span>
           </div>
           <div className="flex items-center space-x-3">
             <Clock className="h-5 w-5 text-blue-600" />
-            <span>Segunda a Sexta: 7h às 22h</span>
+            <span>Segunda a Sexta: 08:00 às 20:00</span>
           </div>
         </CardContent>
       </Card>
@@ -59,11 +59,14 @@ export function ContactInfo() {
         </CardHeader>
         <CardContent>
           <div className="flex space-x-4">
+            <a 
+              href="https://www.instagram.com/campusabertocefetleopoldina/" 
+              className="p-3 bg-pink-100 rounded-lg hover:bg-pink-200 transition-colors"
+              >
+              <Instagram className="h-6 w-6 text-pink-600" />
+            </a>
             <a href="#" className="p-3 bg-blue-100 rounded-lg hover:bg-blue-200 transition-colors">
               <Facebook className="h-6 w-6 text-blue-600" />
-            </a>
-            <a href="#" className="p-3 bg-pink-100 rounded-lg hover:bg-pink-200 transition-colors">
-              <Instagram className="h-6 w-6 text-pink-600" />
             </a>
             <a href="#" className="p-3 bg-red-100 rounded-lg hover:bg-red-200 transition-colors">
               <Youtube className="h-6 w-6 text-red-600" />
