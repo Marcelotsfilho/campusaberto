@@ -5,25 +5,25 @@ const missions = [
     icon: Target,
     title: "Nossa Missão",
     description:
-      "Promover o acesso gratuito ao esporte de qualidade para toda a comunidade, contribuindo para o desenvolvimento social e a melhoria da qualidade de vida.",
+      "Democratizar o acesso ao Esporte, tornando-o acessível a todos.",
   },
   {
     icon: Heart,
     title: "Nossos Valores",
     description:
-      "Inclusão, respeito, excelência e compromisso social são os pilares que norteiam todas as nossas ações e atividades.",
+      "Nos baseamos nos Valores Olímpicos: Respeito, Amizade e Excelência, na realização de todas as ações do Campus Aberto, dentro e fora dele.",
   },
   {
     icon: Users,
     title: "Nossa Visão",
     description:
-      "Ser referência em extensão universitária, conectando o CEFET-MG com a comunidade através do esporte e da educação.",
+      "Ser uma instituição federal referência na promoção do esporte como ferramenta de transformação social, criando um futuro mais justo e inclusivo para as comunidades em todo o país.",
   },
   {
     icon: Award,
     title: "Nosso Compromisso",
     description:
-      "Oferecer atividades de alta qualidade com profissionais qualificados, infraestrutura adequada e acompanhamento personalizado.",
+      "Transformar a sociedade através do Esporte gratuito e de qualidade.",
   },
 ]
 
@@ -35,8 +35,9 @@ export function MissionSection() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Nossos Princípios</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              O Campus Aberto foi criado em 2022 com o objetivo de democratizar o acesso ao esporte e promover a
-              integração entre a universidade e a comunidade externa.
+              Conheça os princípios que guiam o nosso trabalho e as nossas ações na comunidade.
+              {/* O Campus Aberto foi criado em 2022 com o objetivo de democratizar o acesso ao esporte e promover a
+              integração entre a universidade e a comunidade externa. */}
             </p>
           </div>
 

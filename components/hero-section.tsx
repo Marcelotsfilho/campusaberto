@@ -19,7 +19,7 @@ export function HeroSection() {
         <img
           src="/banner.jpg"
           alt="Campus CEFET-MG"
-          className="w-full h-full object-cover brightness-75 filter blur-sm"
+          className="w-full h-full object-cover brightness-75 filter "
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>
