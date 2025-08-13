@@ -65,8 +65,9 @@ campus-aberto/\
 
 ###  📋 Developers
 
-- **Isabelly**
+- **Isabelly Araújo Temoteo**
   - Computer Engineering Student at CEFET-MG Leopoldina
 
-- **Marcelo**
+- **Marcelo Teixeira Filho**
   - Computer Engineering Student at CEFET-MG Leopoldina
+
