@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Mail, Linkedin } from "lucide-react"
+import { Mail, Linkedin, Search, Filter } from "lucide-react"
 
 const teamMembers = [
   {
@@ -56,14 +56,79 @@ const teamMembers = [
   },
 ]
 
+const areas = [
+  { value: "todas", label: "Todas as áreas" },
+  { value: "coordenacao", label: "Coordenação" },
+  { value: "natacao", label: "Natação" },
+  { value: "futebol", label: "Futebol" },
+  { value: "volei", label: "Vôlei" },
+  { value: "basquete", label: "Basquete" },
+  { value: "atletismo", label: "Atletismo" },
+]
+
 export function TeamGrid() {
   const [expandedMember, setExpandedMember] = useState<number | null>(null)
+  const [searchTerm, setSearchTerm] = useState("")
+  const [selectedArea, setSelectedArea] = useState("todas")
+
+  const filteredMembers = teamMembers.filter((member) => {
+    const matchesSearch =
+      member.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      member.role.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      member.specialization.toLowerCase().includes(searchTerm.toLowerCase())
+
+    const matchesArea =
+      selectedArea === "todas"
+        ? true
+        : selectedArea === "coordenacao" && member.role.includes("Coordenador") ||
+          selectedArea === "natacao" && member.specialization.includes("Natação") ||
+          selectedArea === "futebol" && member.specialization.includes("Futebol") ||
+          selectedArea === "volei" && member.specialization.includes("Voleibol") ||
+          selectedArea === "basquete" && member.specialization.includes("Basquetebol") ||
+          selectedArea === "atletismo" && member.specialization.includes("Atletismo")
+
+    return matchesSearch && matchesArea
+  })
 
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
+        {/* Search Filters */}
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8">
+          <div className="flex flex-col lg:flex-row gap-4 items-center">
+            {/* Search Input */}
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+              <input
+                type="text"
+                placeholder="Buscar por nome ou especialidade..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
+              />
+            </div>
+
+            {/* Area Filter */}
+            <div className="relative">
+              <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+              <select
+                value={selectedArea}
+                onChange={(e) => setSelectedArea(e.target.value)}
+                className="pl-10 pr-8 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent appearance-none bg-white dark:bg-gray-700 dark:text-white min-w-[200px]"
+              >
+                {areas.map((area) => (
+                  <option key={area.value} value={area.value}>
+                    {area.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+        </div>
+
+        {/* Team Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
+          {filteredMembers.map((member, index) => (
             <Card
               key={index}
               className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer"
