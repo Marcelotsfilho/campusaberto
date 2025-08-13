@@ -6,7 +6,7 @@ export function AboutHero() {
         <img
           src="/equipecampusaberto.jpg"
           alt="Equipe Campus Aberto"
-          className="w-full h-full object-cover brightness-50 blur-none"
+          className="w-full h-full object-cover brightness-75 blur-none"
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>

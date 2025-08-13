@@ -17,20 +17,20 @@ export function ImpactSection() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">500+</div>
+                <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">+500</div>
                 <div className="text-gray-600 dark:text-gray-300">Famílias Beneficiadas</div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">8</div>
-                <div className="text-gray-600 dark:text-gray-300">Cursos, Oficinas e Projetos</div>
+                <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">10</div>
+                <div className="text-gray-600 dark:text-gray-300">Projetos em Andamento</div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
                 <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">3</div>
-                <div className="text-gray-600 dark:text-gray-300">Anos de Projeto</div>
+                <div className="text-gray-600 dark:text-gray-300">Anos de Atividade</div>
               </CardContent>
             </Card>
           </div>
@@ -39,19 +39,26 @@ export function ImpactSection() {
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">História do Projeto</h3>
             <div className="prose prose-lg max-w-none text-gray-600 dark:text-gray-300">
               <p className="mb-4">
-                O Campus Aberto nasceu em 2022 da necessidade de aproximar o CEFET-MG da comunidade externa, oferecendo
-                acesso gratuito às instalações esportivas da instituição. O projeto surgiu como uma iniciativa de
-                extensão universitária, reconhecendo o papel social da universidade pública.
+                O Campus Aberto surgiu da demanda identificada de aproximar a instituição da comunidade, de forma a consolidar 
+                sua função social. Em 2022 foi iniciada uma versão piloto do projeto, com oficinas de natação para crianças e 
+                adolescentes.
               </p>
               <p className="mb-4">
-                Inicialmente, o projeto atendia cerca de 50 famílias em apenas 3 modalidades. Hoje, graças ao apoio da
-                comunidade acadêmica e ao reconhecimento da sociedade, o Campus Aberto se tornou um dos maiores projetos
-                de extensão do CEFET-MG.
+                No ano seguinte foram implementados 3 projetos de pesquisa, no contexto de Esporte e Tecnologia; e 1 de extensão, 
+                na forma de oficinas gratuitas de natação e esportes coletivos para adolescentes. Foi implementada também, a 
+                identidade visual do projeto.
+              </p>
+              <p className="mb-4">
+                Em 2024 ampliaram-se os projetos: 4 de pesquisa (IPAQmove); 1 curso de extensão (Lei de Incentivo ao Esporte); 
+                2 projetos (oficinas esportivas de natação e esportes coletivos); 1 equipe de competição (Atlética Panterão). 
+                A implementação da Atlética Panterão ao Campus Aberto foi de extrema importância pois possibilitou conectar 
+                pessoas em prol do mesmo objetivo: transformar a sociedade através do Esporte.
               </p>
               <p>
-                Nossa infraestrutura inclui quadras poliesportivas, piscina olímpica, campo de futebol, pista de
-                atletismo e salas especializadas, todas disponíveis gratuitamente para a comunidade externa, sempre com
-                acompanhamento de profissionais qualificados.
+                Atualmente, em 2025 mantiveram-se os projetos do ano anterior, e foram implementados: 1 grupo de corrida; 1 
+                curso com oficinas de dança. Gratuitas sobre Educação Física no ENEM; e 1 curso de Arte, Cultura e Tecnologia. 
+                A grande novidade desse ano foi a ampliação da área de atuação do Campus Aberto, que passou a atuar como grupo 
+                de Arte e Cultura do CEFET-MG.
               </p>
             </div>
           </div>

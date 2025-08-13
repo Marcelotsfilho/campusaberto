@@ -36,10 +36,10 @@ const testimonials = [
 ]
 
 const stats = [
-  { number: "500+", label: "Familias atendidas" },
+  { number: "+500", label: "Familias atendidas" },
   { number: "10", label: "Projetos" },
   { number: "3", label: "Anos de projeto" },
-  { number: "30+", label: "Apoiadores" },
+  { number: "+30", label: "Apoiadores" },
 ]
 
 export function TestimonialsSection() {
