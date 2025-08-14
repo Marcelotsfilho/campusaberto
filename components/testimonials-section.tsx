@@ -24,7 +24,7 @@ const testimonials = [
     activity: "Patrocinador Master",
     text: "Acreditamos no poder do esporte para transformar comunidades. Apoiar o Campus Aberto é investir no futuro e no bem-estar de todos.",
     rating: 5,
-    logo: "/soleneve-logo.webp", // Logo do patrocinador
+    logo: "/logo/soleneve-logo.webp", // Logo do patrocinador
   },
   {
     name: "Ana Pereira",

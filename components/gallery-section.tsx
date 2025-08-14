@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button"
 
 const galleryImages = [
 	{
-		src: "/carunners.jpg",
+		src: "/galeria/carunners.jpg",
 		alt: "Prática de corrida da equipe Campus Aberto Runners",
-		title: "Equipe Campus Aberto Runners",
+		title: "Equipe de Corrida",
 	},
 	{
-		src: "/palestra-runners.jpg",
+		src: "/oficinas/palestra-runners.jpg",
 		alt: "Palestra inaugural projeto Campus Aberto Runners",
 		title: "Palestra inaugural projeto Campus Aberto Runners",
 	},
@@ -21,24 +21,78 @@ const galleryImages = [
 		title: "Participação na MOCITEC 2023",
 	},
 	{
-		src: "/futevolei.jpg",
+		src: "/galeria/futevolei.jpg",
 		alt: "Oficina Futevôlei",
 		title: "Oficina de futevôlei na MOCITEC 2023",
 	},
 	{
-		src: "/lei-insentivo.jpg",
-		alt: "Curso Lei de Insentivo ao Esporte",
-		title: "Curso Lei de Insentivo ao Esporte",
+		src: "/oficinas/lei-incentivo.jpg",
+		alt: "Curso Lei de Incentivo ao Esporte",
+		title: "Curso Lei de Incentivo ao Esporte",
 	},
 	{
-		src: "/equipecarunners.jpg",
+		src: "/oficinas/equipecarunners.jpg",
 		alt: "Aula inaugural Runners",
 		title: "Aula inaugural Campus Aberto Runners",
 	},
 	{
-		src: "/apresentacao-ipaq-gabriela.jpg",
+		src: "/galeria/apresentacao-ipaq-gabriela.jpg",
 		alt: "Apresentação do projeto IPAQmove",
 		title: "Apresentação do projeto IPAQmove",
+		objectPosition: "center 20%",
+	},
+	{
+		src: "/galeria/ipaqmove.jpg",
+		alt: "Apresentação do projeto IPAQmove",
+		title: "Apresentação do projeto IPAQmove na Semana da Computação 2024",
+		objectPosition: "center 20%",
+	},
+	{
+		src: "/galeria/palestra-runners2.jpg",
+		alt: "Apresentação do projeto Runners",
+		title: "Palestra na inauguração do projeto Campus Aberto Runners",
+		objectPosition: "center 20%",
+	},
+	{
+		src: "/galeria/acao-apae.png",
+		alt: "Participação na Ação social na APAE de Leopildina",
+		title: "Ação social na APAE de Leopildina",
+		objectPosition: "center 20%",
+	},
+	{
+		src: "/galeria/basquete.jpg",
+		alt: "Campeonato de basquete em parceria com a Atlética Panterão",
+		title: "Campeonato de basquete 2025",
+		objectPosition: "center 20%",
+	},
+	{
+		src: "/galeria/caminhada.jpg",
+		alt: "Equipe de caminhada do Campus Aberto Runners",
+		title: "Equipe de caminhada do Campus Aberto Runners",
+		objectPosition: "center 20%",
+	},
+	{
+		src: "/galeria/validacao-ipaqmove.jpg",
+		alt: "Validação do aplicativo mobile IPAQmove",
+		title: "Validação do aplicativo mobile IPAQmove",
+		objectPosition: "center 20%",
+	},
+	{
+		src: "/galeria/trabalho-ipaqmove.jpg",
+		alt: "Equipe de trabalho do IPAQmove",
+		title: "Validação de dados coletados no aplicativo IPAQmove",
+		objectPosition: "center 20%",
+	},
+	{
+		src: "/galeria/profrunners.jpg",
+		alt: "Profissionais Campus Aberto Runners",
+		title: "Embaixadores do Campus Aberto Runners",
+		objectPosition: "center 20%",
+	},
+	{
+		src: "/oficinas/camp-arthur-ribeiro-fem.jpg",
+		alt: "Jogo feminino na final do Campeonato Arthur Ribeiro",
+		title: "Campeonato Arthur Ribeiro",
 		objectPosition: "center 20%",
 	},
 ]

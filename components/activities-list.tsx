@@ -15,7 +15,7 @@ const activities = [
 		// participants: "15 alunos por turma",
 		// ageGroup: "6+ anos",
 		// level: "Iniciante a Competitivo",
-		image: "/lei-insentivo.jpg",
+		image: "/oficinas/lei-incentivo.jpg",
 	},
 	{
 		name: "Arte, Cultura e Tecnologia",
@@ -25,7 +25,7 @@ const activities = [
 		// participants: "atletas ilimitados por treino",
 		// ageGroup: "14+ anos",
 		// level: "Iniciante a Competitivo",
-		image: "/arte-cultura.jpg",
+		image: "/oficinas/arte-cultura.jpg",
 	},
 
 	//OFICINAS
@@ -37,7 +37,7 @@ const activities = [
 		// participants: "22 jogadores por treino",
 		// ageGroup: "16+ anos",
 		// level: "Todos os níveis",
-		image: "/oficina-natacao.png",
+		image: "/oficinas/oficina-natacao.png",
 	},
 	{
 		name: "Esportes Coletivos",
@@ -47,7 +47,7 @@ const activities = [
 		// participants: "12 jogadores por treino",
 		// ageGroup: "14+ anos",
 		// level: "Iniciante a Avançado",
-		image: "/oficina-peteca.jpg",
+		image: "/oficinas/oficina-peteca.jpg",
 	},
 	{
 		name: "Educação Física no ENEM",
@@ -57,7 +57,7 @@ const activities = [
 		// participants: "10 jogadores por treino",
 		// ageGroup: "12+ anos",
 		// level: "Todos os níveis",
-		image: "/ed-fisica-enem.webp",
+		image: "/oficinas/ed-fisica-enem.webp",
 	},
 	{
 		name: "Campus Aberto Runners",
@@ -67,7 +67,7 @@ const activities = [
 		// participants: "8 jogadores por treino",
 		// ageGroup: "8+ anos",
 		// level: "Todos os níveis",
-		image: "/equipecarunners.jpg",
+		image: "/oficinas/equipecarunners.jpg",
 	},
 
 	//PESQUISA
@@ -79,7 +79,7 @@ const activities = [
 		// participants: "8 jogadores por treino",
 		// ageGroup: "8+ anos",
 		// level: "Todos os níveis",
-		image: "/ipaq-move.jpg",
+		image: "/oficinas/ipaq-move.jpg",
 	},
 
 	//EVENTOS
@@ -101,7 +101,7 @@ const activities = [
 		// participants: "8 jogadores por treino",
 		// ageGroup: "8+ anos",
 		// level: "Todos os níveis",
-		image: "/camp-arthur-ribeiro-fem.jpg",
+		image: "/oficinas/camp-arthur-ribeiro-fem.jpg",
 	},
 	{
 		name: "Palestra Campus Aberto Runners",
@@ -111,7 +111,7 @@ const activities = [
 		// participants: "8 jogadores por treino",
 		// ageGroup: "8+ anos",
 		// level: "Todos os níveis",
-		image: "/palestra-runners.jpg",
+		image: "/oficinas/palestra-runners.jpg",
 	},
 	
 	//AÇÕES SOCIAIS
@@ -123,7 +123,7 @@ const activities = [
 		// participants: "8 jogadores por treino",
 		// ageGroup: "8+ anos",
 		// level: "Todos os níveis",
-		image: "/acao-apae.png",
+		image: "/galeria/acao-apae.png",
 	},
 	{
 		name: "Expo Leo 2025",
@@ -133,7 +133,7 @@ const activities = [
 		// participants: "8 jogadores por treino",
 		// ageGroup: "8+ anos",
 		// level: "Todos os níveis",
-		image: "/expo-leo.jpg",
+		image: "/oficinas/expo-leo.jpg",
 	},
 ]
 

@@ -24,7 +24,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
             <img
-              src={theme === "dark" ? "/logoC.A-branca.png" : "/logoC.A-azul.png"}
+              src={theme === "dark" ? "/logo/logoC.A-branca.png" : "/logo/logoC.A-azul.png"}
               alt="Campus Aberto Logo"
               className="h-10 w-auto"
             />

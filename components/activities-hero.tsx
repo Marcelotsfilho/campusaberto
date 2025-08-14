@@ -4,7 +4,7 @@ export function ActivitiesHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/equipecarunners.jpg"
+          src="/oficinas/equipecarunners.jpg"
           alt="Atividades Campus Aberto"
           className="w-full h-full object-cover brightness-75 blur-none"
         />
