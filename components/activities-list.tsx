@@ -25,7 +25,7 @@ const activities = [
 		// participants: "atletas ilimitados por treino",
 		// ageGroup: "14+ anos",
 		// level: "Iniciante a Competitivo",
-		image: "",
+		image: "/arte-cultura.jpg",
 	},
 
 	//OFICINAS
@@ -37,7 +37,7 @@ const activities = [
 		// participants: "22 jogadores por treino",
 		// ageGroup: "16+ anos",
 		// level: "Todos os níveis",
-		image: "/",
+		image: "/oficina-natacao.png",
 	},
 	{
 		name: "Esportes Coletivos",
@@ -47,7 +47,7 @@ const activities = [
 		// participants: "12 jogadores por treino",
 		// ageGroup: "14+ anos",
 		// level: "Iniciante a Avançado",
-		image: "",
+		image: "/oficina-peteca.jpg",
 	},
 	{
 		name: "Educação Física no ENEM",
@@ -123,7 +123,17 @@ const activities = [
 		// participants: "8 jogadores por treino",
 		// ageGroup: "8+ anos",
 		// level: "Todos os níveis",
-		image: "/",
+		image: "/acao-apae.png",
+	},
+	{
+		name: "Expo Leo 2025",
+		description: "Participação na Expo Leo 2025",
+		// schedule: "Segunda a Sexta - 16h às 18h",
+		// location: "Sala de Tênis de Mesa",
+		// participants: "8 jogadores por treino",
+		// ageGroup: "8+ anos",
+		// level: "Todos os níveis",
+		image: "/expo-leo.jpg",
 	},
 ]
 
@@ -177,7 +187,7 @@ export function ActivitiesList() {
 				  	["MOCITEC MG 2023", "Campeonato Arthur Ribeiro"].includes(activity.name)
 				? true
 				: selectedModalidade === "acoes" &&
-				  	["APAE"].includes(activity.name)
+				  	["APAE", "Expo Leo 2025"].includes(activity.name)
 				? true
 				: false
 
