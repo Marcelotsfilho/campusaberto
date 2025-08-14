@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
-                src="/logoC.A-branca.png"
+                src="/logo/logoC.A-branca.png"
                 alt="Campus Aberto Logo"
                 className="h-20 w-auto"
               />
