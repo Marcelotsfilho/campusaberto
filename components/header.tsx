@@ -50,9 +50,9 @@ export function Header() {
               <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
             </Button>
-            <Button asChild className="bg-blue-600 hover:bg-blue-700">
+            {/* <Button asChild className="bg-blue-600 hover:bg-blue-700">
               <Link href="/cadastro">Cadastre-se</Link>
-            </Button>
+            </Button> */}
           </nav>
 
           {/* Mobile menu button */}
@@ -81,11 +81,11 @@ export function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button asChild className="bg-blue-600 hover:bg-blue-700 w-fit">
+              {/* <Button asChild className="bg-blue-600 hover:bg-blue-700 w-fit">
                 <Link href="/cadastro" onClick={() => setIsMenuOpen(false)}>
                   Cadastre-se
                 </Link>
-              </Button>
+              </Button> */}
             </nav>
           </div>
         )}
