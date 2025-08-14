@@ -16,6 +16,7 @@ export function Header() {
     { name: "Atividades", href: "/atividades" },
     { name: "Equipe", href: "/equipe" },
     { name: "Contato", href: "/contato" },
+    { name: "Atletica", href: "/atletica" },
   ]
 
   return (
