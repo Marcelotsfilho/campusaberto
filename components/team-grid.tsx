@@ -1,60 +1,27 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Mail, Linkedin, Search, Filter } from "lucide-react"
+import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Mail, Linkedin, Search, Filter } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Prof. Dr. Carlos Silva",
+    name: "Drª Gabriela Venturini",
     role: "Coordenador Geral",
     specialization: "Educação Física",
-    bio: "Doutor em Ciências do Esporte com mais de 15 anos de experiência em projetos de extensão universitária.",
-    image: "/placeholder.svg?height=300&width=300",
+    bio: [
+      "Profissional de Educação Física (CREF 029632 - G/MG).",
+      "Doutora em Ciências do Exercício e do Esporte (UERJ).",
+      "Professora EBTT de Educação Física do campus Leopoldina do CEFET-MG.",
+      "Especialista em Lei de Incentivo ao Esporte.",
+    ],
+    image: "/equipe/gabriela-venturini.png?height=300&width=300",
     email: "carlos.silva@cefetmg.br",
+    github: "https://github.com/gabriela-venturini",
+	linkedin: "https://www.linkedin.com/in/gabriela-venturini",
   },
-  {
-    name: "Profa. Dra. Ana Santos",
-    role: "Coordenadora Pedagógica",
-    specialization: "Natação e Esportes Aquáticos",
-    bio: "Especialista em natação adaptada e desenvolvimento de programas esportivos inclusivos.",
-    image: "/placeholder.svg?height=300&width=300",
-    email: "ana.santos@cefetmg.br",
-  },
-  {
-    name: "Prof. João Oliveira",
-    role: "Instrutor de Futebol",
-    specialization: "Futebol e Futsal",
-    bio: "Ex-atleta profissional com licença CBF e experiência em formação de base.",
-    image: "/placeholder.svg?height=300&width=300",
-    email: "joao.oliveira@cefetmg.br",
-  },
-  {
-    name: "Profa. Maria Costa",
-    role: "Instrutora de Vôlei",
-    specialization: "Voleibol",
-    bio: "Técnica certificada pela CBV com experiência em equipes competitivas e recreativas.",
-    image: "/placeholder.svg?height=300&width=300",
-    email: "maria.costa@cefetmg.br",
-  },
-  {
-    name: "Prof. Pedro Lima",
-    role: "Instrutor de Basquete",
-    specialization: "Basquetebol",
-    bio: "Formado em Educação Física com especialização em basquete de formação e alto rendimento.",
-    image: "/placeholder.svg?height=300&width=300",
-    email: "pedro.lima@cefetmg.br",
-  },
-  {
-    name: "Profa. Laura Ferreira",
-    role: "Instrutora de Atletismo",
-    specialization: "Atletismo e Corrida",
-    bio: "Especialista em atletismo com foco em corridas de fundo e meio-fundo.",
-    image: "/placeholder.svg?height=300&width=300",
-    email: "laura.ferreira@cefetmg.br",
-  },
-]
+];
 
 const areas = [
   { value: "todas", label: "Todas as áreas" },
@@ -64,31 +31,243 @@ const areas = [
   { value: "volei", label: "Vôlei" },
   { value: "basquete", label: "Basquete" },
   { value: "atletismo", label: "Atletismo" },
-]
+];
+
+// Exemplo de estrutura de projetos e colaboradores
+const projects = [
+  {
+    name: "IPAQmove",
+    members: [
+      {
+        name: "Prof. Ms. Luis Augusto Mattos Mendes",
+        role: "Coordenador",
+        specialization: "Banco de Dados",
+        bio: "Especialista em natação adaptada e desenvolvimento de programas esportivos inclusivos.",
+        image: "/equipe/isabelly.jpeg",
+        email: "ana.santos@cefetmg.br",
+        linkedin: "https://linkedin.com/in/ana-santos",
+        github: "",
+      },
+      {
+        name: "Isabelly Araujo Temóteo",
+        role: "Bolsista",
+        specialization: "Graduanda em Engenharia da Computação",
+        bio: "Graduanda em Engenharia da Computação",
+        image: "/equipe/isabelly.jpeg",
+        // email: "ana.santos@cefetmg.br",
+        linkedin: "https://linkedin.com/in/ana-santos",
+        github: "sda  ",
+      },
+      {
+        name: "Elianfrancis",
+        role: "Bolsista",
+        specialization: "Graduando em Engenharia de Controle e Automação",
+        bio: "Graduando em Engenharia de Controle e Automação",
+        image: "/equipe/elian.jpeg",
+        email: "ana.santos@cefetmg.br",
+        linkedin: "https://linkedin.com/in/ana-santos",
+        github: "sda  ",
+      },
+      {
+        name: "Humberto de Moraes Lanzieri Filho",
+        role: "Bolsista",
+        specialization: "Estudante em Técnico em Informática",
+        bio: "Estudante em Técnico em Informática",
+        image: "/equipe/isabelly.jpeg",
+        linkedin:
+          "https://br.linkedin.com/in/humberto-de-moraes-lanzieri-filho-9a913b285",
+        github: "https://github.com/hlanzieri",
+      },
+      {
+        name: "Gabriela Queiroz Ribeiro",
+        role: "Bolsista",
+        specialization: "Estudante em Técnica em Informática",
+        bio: "Estudante em Técnica em Informática",
+        image: "/equipe/isabelly.jpeg",
+        linkedin: "https://br.linkedin.com/in/gabriela-queiroz-ribeiro-789396356",
+        // github: "sda  ",
+      },
+    ],
+  },
+  {
+    name: "Arte, Cultura e Tecnologia",
+    members: [
+      {
+        name: "Profa. Drª Gabriela Venturini",
+        role: "Coordenadora",
+        specialization: "Doutora em Educação Física",
+        bio: "Doutora em Educa;áo Física",
+        image: "/equipe/gabriela-venturini.png",
+        // email: "joao.oliveira@cefetmg.br",
+        // linkedin: "https://linkedin.com/in/joao-oliveira",
+        // github: "https://github.com/joao-oliveira",
+      },
+      {
+        name: "Ítalo Aurélio de Paula Vieira",
+        role: "Bolsista",
+        specialization: "Graduando em Engenharia da Computação",
+        bio: "Graduando em Engenharia.",
+        image: "/equipe/italo.jpeg",
+        // email: "joao.oliveira@cefetmg.br",
+        linkedin: "https://www.linkedin.com/in/italoaurelio?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/italoaurelio",
+      },
+      {
+        name: "Eduarda Costa de Oliveira Silva",
+        role: "Bolsista",
+        specialization: "Estudante de Técnica em Mecânica",
+        bio: "Estudante de Técnica em Mecânica.",
+        image: "/equipe/eduarda.jpeg",
+        // email: "joao.oliveira@cefetmg.br",
+        // linkedin: "https://linkedin.com/in/joao-oliveira",
+        // github: "https://github.com/joao-oliveira",
+      },
+    ],
+  },
+  {
+    name: "Campus Aberto Runners",
+    members: [
+      {
+        name: "Prof. Dr Douglas da Silva Vieira Martins",
+        role: "Instrutor de Futebol",
+        specialization: "Futebol e Futsal",
+        bio: "Ex-atleta profissional com licença CBF e experiência em formação de base.",
+        image: "/equipe/isabelly.jpeg",
+        // email: "joao.oliveira@cefetmg.br",
+        // linkedin: "https://linkedin.com/in/joao-oliveira",
+        // github: "https://github.com/joao-oliveira",
+      },
+      {
+        name: "Lucas Junqueira Chagas da Cunha",
+        role: "Bolsista",
+        specialization: "Graduando em Engenharia da Computação",
+        bio: "Graduando em Engenharia.",
+        image: "/equipe/lucas-cunha.jpg",
+        // email: "joao.oliveira@cefetmg.br",
+        // linkedin: "https://linkedin.com/in/joao-oliveira",
+        // github: "https://github.com/joao-oliveira",
+      },
+      {
+        name: "Arthur Rocha Barros",
+        role: "Bolsista",
+        specialization: "Graduando em Engenharia",
+        bio: "Graduando em Engenharia.",
+        image: "/equipe/arthur.jpeg",
+        // email: "joao.oliveira@cefetmg.br",
+        // linkedin: "https://linkedin.com/in/joao-oliveira",
+        // github: "https://github.com/joao-oliveira",
+      },
+    ],
+  },
+  {
+    name: "Educação Física no ENEM",
+    members: [
+      {
+        name: "Prof Drª Juliana Barbosa Neves",
+        role: "Instrutor de Futebol",
+        specialization: "Futebol e Futsal",
+        bio: "Ex-atleta profissional com licença CBF e experiência em formação de base.",
+        image: "/equipe/isabelly.jpeg",
+        // email: "joao.oliveira@cefetmg.br",
+        // linkedin: "https://linkedin.com/in/joao-oliveira",
+        // github: "https://github.com/joao-oliveira",
+      },
+      {
+        name: "Pedro Felipe Eblen",
+        role: "Bolsista",
+        specialization: "Graduando em Engenharia da Computação",
+        bio: "Graduando em Engenharia da Computação.",
+        image: "/equipe/isabelly.jpeg",
+        // email: "joao.oliveira@cefetmg.br",
+        // linkedin: "https://linkedin.com/in/joao-oliveira",
+        // github: "https://github.com/joao-oliveira",
+      },
+      {
+        name: "Rodrigo Albuquerque da Silva Venetillo",
+        role: "Bolsista",
+        specialization: "Graduando em Engenharia da Computação",
+        bio: "Graduando em Engenharia da Computação.",
+        image: "/equipe/rodrigo.jpeg",
+        // email: "joao.oliveira@cefetmg.br",
+        // linkedin: "https://linkedin.com/in/joao-oliveira",
+        // github: "https://github.com/joao-oliveira",
+      },
+    ],
+  },
+  {
+    name: "Atlética Panterão",
+    members: [
+      {
+        name: "Prof Drª Gabriela Venturini",
+        role: "Coordenadora",
+        specialization: "Futebol e Futsal",
+        bio: ".",
+        image: "/equipe/gabriela-venturini.png",
+        // email: "joao.oliveira@cefetmg.br",
+        // linkedin: "https://linkedin.com/in/joao-oliveira",
+        // github: "https://github.com/joao-oliveira",
+      },
+      {
+        name: "Marcelo Teixeira de Sousa Filho",
+        role: "Bolsista",
+        specialization: "Graduando em Engenharia da Computação",
+        bio: "Graduando em Engenharia da Computação.",
+        image: "/equipe/marcelo.jpeg",
+        email: "joao.oliveira@cefetmg.br",
+        linkedin: "https://www.linkedin.com/in/marcelo-teixeira-574926311/",
+        github: "https://github.com/marcelotsfilho",
+      },
+      {
+        name: "Lanna Duarte de Souza",
+        role: "Bolsista",
+        specialization: "Graduando em Engenharia da Computação",
+        bio: "Graduando em Engenharia da Computação.",
+        image: "/equipe/lanna.jpeg",
+        // email: "joao.oliveira@cefetmg.br",
+        linkedin: "https://www.linkedin.com/in/lanna-duarte-de-souza-901a912b0",
+        // github: "https://github.com/joao-oliveira",
+      },
+    ],
+  },
+];
 
 export function TeamGrid() {
-  const [expandedMember, setExpandedMember] = useState<number | null>(null)
-  const [searchTerm, setSearchTerm] = useState("")
-  const [selectedArea, setSelectedArea] = useState("todas")
+  const [expandedMember, setExpandedMember] = useState<number | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedArea, setSelectedArea] = useState("todas");
 
   const filteredMembers = teamMembers.filter((member) => {
     const matchesSearch =
       member.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       member.role.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      member.specialization.toLowerCase().includes(searchTerm.toLowerCase())
+      member.specialization.toLowerCase().includes(searchTerm.toLowerCase());
 
     const matchesArea =
-      selectedArea === "todas"
+      selectedArea === "todos"
         ? true
-        : selectedArea === "coordenacao" && member.role.includes("Coordenador") ||
-          selectedArea === "natacao" && member.specialization.includes("Natação") ||
-          selectedArea === "futebol" && member.specialization.includes("Futebol") ||
-          selectedArea === "volei" && member.specialization.includes("Voleibol") ||
-          selectedArea === "basquete" && member.specialization.includes("Basquetebol") ||
-          selectedArea === "atletismo" && member.specialization.includes("Atletismo")
+        : (selectedArea === "coordenacao" &&
+            (member.role.includes("Coordenador") || member.role.includes("Coordenadora"))) ||
+          (selectedArea === "natacao" &&
+            member.specialization.includes("Natação")) ||
+          (selectedArea === "futebol" &&
+            member.specialization.includes("Futebol")) ||
+          (selectedArea === "volei" &&
+            member.specialization.includes("Voleibol")) ||
+          (selectedArea === "basquete" &&
+            member.specialization.includes("Basquetebol")) ||
+          (selectedArea === "atletismo" &&
+            member.specialization.includes("Atletismo"));
 
-    return matchesSearch && matchesArea
-  })
+    return matchesSearch && matchesArea;
+  });
+
+  // Coordenadora Geral (primeira do array)
+  const coordinator = teamMembers.find((m) =>
+    m.role.toLowerCase().includes("coordenador")
+  );
+
+  // Demais membros (exclui coordenadora)
+  const projectMembers = teamMembers.filter((m) => m !== coordinator);
 
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900">
@@ -107,7 +286,6 @@ export function TeamGrid() {
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
               />
             </div>
-
             {/* Area Filter */}
             <div className="relative">
               <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
@@ -126,55 +304,155 @@ export function TeamGrid() {
           </div>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredMembers.map((member, index) => (
-            <Card
-              key={index}
-              className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer"
-              onClick={() => setExpandedMember(expandedMember === index ? null : index)}
-            >
-              <div className="relative">
-                <img src={member.image || "/placeholder.svg"} alt={member.name} className="w-full h-64 object-cover" />
-                <div className="absolute top-4 right-4">
-                  <Badge className="bg-orange-500">{member.specialization}</Badge>
-                </div>
-              </div>
-
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{member.name}</h3>
-                <p className="text-orange-500 dark:text-orange-400 font-medium mb-3">{member.role}</p>
-
-                {expandedMember === index ? (
-                  <div className="space-y-4">
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{member.bio}</p>
-                    <div className="flex items-center space-x-3">
-                      <a
-                        href={`mailto:${member.email}`}
-                        className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 text-sm"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <Mail className="h-4 w-4" />
-                        <span>Contato</span>
-                      </a>
-                      <a
-                        href="#"
-                        className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 text-sm"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <Linkedin className="h-4 w-4" />
-                        <span>LinkedIn</span>
-                      </a>
-                    </div>
-                  </div>
-                ) : (
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Clique para ver mais informações</p>
+        {/* Coordenadora Geral Section */}
+        {coordinator && (
+          <section className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 mb-12 flex flex-col md:flex-row items-center">
+            <div className="w-full md:w-1/3 flex flex-col items-center">
+              <span className="uppercase text-orange-600 dark:text-orange-400 font-bold mb-4 tracking-widest text-lg">
+                Coordenadora Geral
+              </span>
+              <img
+                src={coordinator.image || "/placeholder.svg"}
+                alt={coordinator.name}
+                className="w-40 h-40 object-cover rounded-full mb-4 md:mb-0"
+              />
+            </div>
+            <div className="w-full md:w-2/3 flex flex-col items-start md:pl-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                {coordinator.name}
+              </h3>
+              {Array.isArray(coordinator.bio) ? (
+                <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300 text-base mb-4">
+                  {coordinator.bio.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
+                  {coordinator.bio}
+                </p>
+              )}
+              <div className="flex items-center space-x-3">
+                {coordinator.linkedin && (
+                  <a
+                    href={coordinator.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 text-sm"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                    <span>LinkedIn</span>
+                  </a>
                 )}
-              </CardContent>
-            </Card>
+                {coordinator.github && (
+                  <a
+                    href={coordinator.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 text-sm"
+                  >
+                    <svg
+                      className="h-4 w-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.263.82-.582 0-.288-.01-1.05-.015-2.06-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.606-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.304-.535-1.527.117-3.183 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.047.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.656.242 2.879.118 3.183.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.624-5.475 5.921.43.37.813 1.096.813 2.21 0 1.595-.014 2.882-.014 3.273 0 .322.218.699.825.58C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Projetos Section */}
+        <section className="mb-12">
+          {projects.map((project, pIdx) => (
+            <div key={pIdx} className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8 text-left">
+                {project.name}
+              </h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {project.members.map((member, index) => (
+                  <Card
+                    key={index}
+                    className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col items-center"
+                    onClick={() =>
+                      setExpandedMember(
+                        expandedMember === `${pIdx}-${index}`
+                          ? null
+                          : `${pIdx}-${index}`
+                      )
+                    }
+                  >
+                    <img
+                      src={member.image || "/placeholder.svg"}
+                      alt={member.name}
+                      className="w-32 h-32 object-cover rounded-full mt-6 mb-4"
+                    />
+                    <CardContent className="flex flex-col items-center p-6">
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 text-center">
+                        {member.name}
+                      </h3>
+                      <p className="text-orange-500 dark:text-orange-400 font-medium mb-3 text-center">
+                        {member.role}
+                      </p>
+                      {expandedMember === `${pIdx}-${index}` ? (
+                        <div className="space-y-4 w-full">
+                          <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed text-center">
+                            {member.bio}
+                          </p>
+                          <div className="flex items-center justify-center space-x-3">
+                            {member.linkedin && (
+                              <a
+                                href={member.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 text-sm"
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                <Linkedin className="h-4 w-4" />
+                                <span>LinkedIn</span>
+                              </a>
+                            )}
+                            {member.github && (
+                              <a
+                                href={member.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 text-sm"
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                <svg
+                                  className="h-4 w-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.263.82-.582 0-.288-.01-1.05-.015-2.06-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.606-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.304-.535-1.527.117-3.183 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.047.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.656.242 2.879.118 3.183.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.624-5.475 5.921.43.37.813 1.096.813 2.21 0 1.595-.014 2.882-.014 3.273 0 .322.218.699.825.58C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                                <span>GitHub</span>
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                      ) : (
+                        <p className="text-gray-600 dark:text-gray-300 text-sm text-center">
+                          Clique para ver mais informações
+                        </p>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              {/* Linha horizontal para separar projetos, exceto após o último */}
+              {pIdx < projects.length - 1 && (
+                <hr className="my-12 border-t border-gray-300 dark:border-gray-700" />
+              )}
+            </div>
           ))}
-        </div>
+        </section>
       </div>
     </section>
-  )
+  );
 }
