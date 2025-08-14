@@ -30,68 +30,52 @@ interface Member {
 const members: Member[] = [
   {
     id: 1,
-    name: "Marcelo Teixeira Filho",
+    name: "Marcelo Teixeira de Sousa Filho",
     position: "Presidente",
     description:
-      "Responsável pela liderança geral da atlética, coordenação das atividades e representação institucional.",
+      "Líder visionário com foco na integração e crescimento da atlética. Responsável pela gestão geral e representação institucional.",
     icon: Crown,
     photo: "/equipe/marcelo.jpeg",
   },
   {
     id: 2,
-    name: "Bruno Santos Oliveira",
+    name: "Isabelly Araújo Temoteo",
     position: "Vice-Presidente",
-    description: "Auxilia na gestão geral e substitui o presidente quando necessário. Coordena projetos especiais.",
+    description: "Apoio estratégico à presidência e coordenação de projetos especiais. Foco em parcerias e desenvolvimento institucional.",
     icon: User,
-    photo: "/member-2.png",
+    photo: "/equipe/isabelly.jpeg",
   },
   {
     id: 3,
-    name: "Camila Rodrigues",
-    position: "Diretora de Eventos",
-    description: "Organiza e coordena todos os eventos esportivos e sociais da atlética ao longo do ano.",
+    name: "Giovana Marreiro Bonin Freire",
+    position: "Secretária",
+    description: "Responsável pela documentação, atas e comunicação interna. Organização de reuniões e controle administrativo.",
     icon: Calendar,
-    photo: "/member-3.png",
+    photo: "/equipe/giovana.jpeg",
   },
   {
     id: 4,
-    name: "Diego Ferreira",
-    position: "Diretor Financeiro",
-    description: "Gerencia as finanças, orçamentos e patrocínios da atlética. Controla receitas e despesas.",
+    name: "Italo Aurélio de Paula Vieira",
+    position: "Diretor Social e Visual",
+    description: "Responsável pela comunicação visual, redes sociais e campanhas publicitárias. Criação de conteúdo e identidade visual.",
     icon: DollarSign,
-    photo: "/member-4.png",
+    photo: "/equipe/italo.jpeg",
   },
   {
     id: 5,
-    name: "Eduarda Lima",
-    position: "Diretora de Marketing",
-    description: "Responsável pela comunicação, redes sociais e divulgação das atividades da atlética.",
+    name: "Elianfrancis Silveira de Souza",
+    position: "Diretor Financeiro",
+    description: "Gestão financeira da atlética, controle de receitas e despesas. Planejamento orçamentário e prestação de contas.",
     icon: Megaphone,
-    photo: "/member-5.png",
+    photo: "/equipe/elian.jpeg",
   },
   {
     id: 6,
-    name: "Felipe Costa",
-    position: "Diretor de Esportes",
-    description: "Coordena as modalidades esportivas, treinos e competições universitárias.",
+    name: "Gabriela Rezende Venturini",
+    position: "Diretora de Ensino, Pesquisa e Extensão",
+    description: "Coordenação de todas as modalidades esportivas, organização de campeonatos e gestão de treinadores.",
     icon: Trophy,
-    photo: "/member-6.png",
-  },
-  {
-    id: 7,
-    name: "Gabriela Mendes",
-    position: "Diretora Social",
-    description: "Organiza atividades de integração, festas e eventos sociais para os membros.",
-    icon: Users,
-    photo: "/member-7.png",
-  },
-  {
-    id: 8,
-    name: "Henrique Alves",
-    position: "Diretor de Mídia",
-    description: "Responsável pela produção de conteúdo audiovisual e cobertura dos eventos.",
-    icon: Camera,
-    photo: "/member-8.png",
+    photo: "/equipe/gabriela-venturini.png",
   },
 ]
 
@@ -154,7 +138,7 @@ export default function AtleticaPanteraoPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
             {members.map((member) => {
               const IconComponent = member.icon
               return (
@@ -192,8 +176,8 @@ export default function AtleticaPanteraoPage() {
             <div className="mb-8">
               <div className="inline-block p-1 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full mb-6">
                 <img
-                  src="/elderly-professor-formal-portrait.png"
-                  alt="Prof. Dr. Roberto Pantera Silva"
+                  src="/equipe/arthur-ribeiro.jpg"
+                  alt="Arthur de Oliveira Ribeiro"
                   className="w-32 h-32 rounded-full object-cover"
                 />
               </div>
@@ -205,22 +189,15 @@ export default function AtleticaPanteraoPage() {
                 <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-6"></div>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-2">Prof. Dr. Roberto Pantera Silva</h3>
-              <p className="text-lg text-gray-400 mb-6 font-light">1965 - 2018</p>
+              <h3 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-2">Arthur de Oliveira Ribeiro</h3>
+              <p className="text-lg text-gray-400 mb-6 font-light">2002- 2021</p>
 
               <div className="prose prose-lg mx-auto">
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  O Professor Roberto foi o visionário por trás da criação da Atlética Panterão em 1995. Seu amor pelo
-                  esporte e dedicação aos estudantes inspiraram gerações de universitários a buscar a excelência tanto
-                  nos estudos quanto nas atividades esportivas.
-                </p>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  Seu legado permanece vivo em cada conquista, em cada momento de união e em cada valor que defendemos.
-                  A Atlética Panterão é o reflexo de sua paixão pela educação e pelo desenvolvimento integral dos
-                  jovens.
+                  Visionário e coração da Atlética Panterão, Arthur foi a força que deu vida a este projeto com garra e generosidade.
                 </p>
                 <p className="text-blue-300 font-medium italic">
-                  "O esporte não forma apenas atletas, forma cidadãos." - Prof. Roberto Pantera Silva
+                  Obrigado por tudo, Arthur. Você é, e sempre será, um de nós.
                 </p>
               </div>
             </div>
@@ -228,31 +205,25 @@ export default function AtleticaPanteraoPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 py-12 px-4 border-t border-slate-700">
+      {/* Call to Action Section */}
+      <section className="py-16 px-4 bg-slate-900 text-center">
         <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-3 mb-6 md:mb-0">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
-                <Gamepad2 className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-white font-semibold">Atlética Panterão</span>
-            </div>
-
-            <div className="flex space-x-4">
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-blue-400">
-                <Facebook className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-blue-400">
-                <Instagram className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-blue-400">
-                <Twitter className="w-5 h-5" />
-              </Button>
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-xl text-blue-200 mb-8">
+              Descubra mais detalhes sobre a Atlética Panterão e nossa trajetória
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            >
+              <a href="https://atleticaleopoldina.netlify.app/" target="_blank" rel="noopener noreferrer">
+                Quer saber mais?
+              </a>
+            </Button>
           </div>
         </div>
-      </footer>
+      </section>
     </div>
   )
 }
