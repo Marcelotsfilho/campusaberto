@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { Heart, Users, Trophy, Zap, Handshake } from "lucide-react";
+import { Heart, Users, Trophy, Zap, Handshake, ChartNoAxesCombined } from "lucide-react";
 
 const benefits = [
   {
@@ -32,7 +32,13 @@ const benefits = [
     icon: Handshake,
     title: "Transformação da Sociedade",
     description:
-      "Proporciona o desenvolvimento integral dos participantes, conectando pessoas, ampliando as relações humanas, através do Esporte enquanto Bem Social.",
+    "Proporciona o desenvolvimento integral dos participantes, conectando pessoas, ampliando as relações humanas, através do Esporte enquanto Bem Social.",
+  },
+  {
+    icon: ChartNoAxesCombined,
+    title: "Desenvolvimento Econômico",
+    description:
+      "Proporciona o desenvolvimento econômico local a partir do Esporte enquanto serviço.",
   },
 ];
 
