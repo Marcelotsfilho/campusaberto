@@ -7,30 +7,37 @@ const testimonials = [
   {
     name: "Maria Silva",
     age: 34,
-    activity: "Vôlei",
-    text: "O Campus Aberto mudou minha vida! Além de melhorar minha saúde, fiz amizades incríveis. A qualidade dos professores é excepcional.",
+    activity: "Corrida",
+    text: "O Campus Aberto mudou minha vida! Além de melhorar minha saúde, fiz amizades incríveis. Os professores animados deixa tudo especial.",
     rating: 5,
   },
   {
-    name: "João Santos",
-    age: 28,
-    activity: "Futebol",
-    text: "Sempre quis jogar futebol mas nunca tive oportunidade. Aqui encontrei um ambiente acolhedor e profissionais dedicados.",
+    name: "Rafael dos Santos",
+    age: 14,
+    activity: "Natação",
+    text: "O Campus Aberto me proporcionou a oportunidade de aprender a nadar e perder o medo da piscina.",
     rating: 5,
   },
+  // {
+  //   name: "Sol e Neve",
+  //   // 'age' foi removido, pois é um patrocinador
+  //   activity: "Patrocinador Master",
+  //   text: "Acreditamos no poder do esporte para transformar comunidades. Apoiar o Campus Aberto é investir no futuro e no bem-estar de todos.",
+  //   rating: 5,
+  //   logo: "/logo/soleneve-logo.webp", // Logo do patrocinador
+  // },
   {
-    name: "Sol e Neve",
-    // 'age' foi removido, pois é um patrocinador
-    activity: "Patrocinador Master",
-    text: "Acreditamos no poder do esporte para transformar comunidades. Apoiar o Campus Aberto é investir no futuro e no bem-estar de todos.",
-    rating: 5,
-    logo: "/logo/soleneve-logo.webp", // Logo do patrocinador
-  },
-  {
-    name: "Ana Pereira",
+    name: "Marcelo Teixeira",
     // Exemplo de bolsista sem idade obrigatória
-    activity: "Bolsista de Educação Física",
-    text: "Fazer parte deste projeto como bolsista é uma experiência de aprendizado imensa. A troca com a comunidade é gratificante e enriquece minha formação.",
+    activity: "Bolsista do Campus Aberto Atlética Panterão",
+    text: "O projeto Campus Aberto me fez evoluir como pessoa, enfretando desafios como a timidez e a falta de confiança.",
+    rating: 5,
+  },
+  {
+    name: "Isabelly Temóteo",
+    // Exemplo de bolsista sem idade obrigatória
+    activity: "Bolsista do Campus Aberto IPAQmove",
+    text: "O projeto me proporcionou a oportunidade de desenvolver habilidades importantes para minha vida pessoal e profissional.",
     rating: 5,
   }
 ]
