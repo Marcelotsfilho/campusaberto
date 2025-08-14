@@ -73,7 +73,7 @@ const activities = [
 	//PESQUISA
 	{
 		name: "IPAQmove",
-		description: "",
+		description: "Projeto de pesquisa",
 		// schedule: "Segunda a Sexta - 16h às 18h",
 		// location: "Sala de Tênis de Mesa",
 		// participants: "8 jogadores por treino",
@@ -280,16 +280,18 @@ export function ActivitiesList() {
 									)}
 								</div>
 
+								{/* Obs: Descomentar essa parte quando for adicionar informações sobre cada projeto e alterar, pois está configurado para faixa etária
 								{expandedCard === index && (
 									<div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
 										<div className="flex items-center justify-between text-sm">
-											<span className="font-medium">Faixa Etária:</span>
+											<span className="font-medium">Informações:</span>
 											<span className="text-orange-600">
 												{activity.ageGroup}
 											</span>
 										</div>
 									</div>
 								)}
+								*/}
 							</CardContent>
 						</Card>
 					))}
